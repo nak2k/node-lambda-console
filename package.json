@@ -1,0 +1,26 @@
+{
+  "name": "lambda-console",
+  "version": "0.0.1",
+  "description": "Console for Lambda",
+  "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/nak2k/node-lambda-console/issues"
+  },
+  "dependencies": {
+    "err-json": "0.0.3"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/nak2k/node-lambda-console",
+  "keywords": [],
+  "license": "MIT",
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nak2k/node-lambda-console.git"
+  },
+  "scripts": {},
+  "files": [
+    "README.md",
+    "lib/"
+  ]
+}
