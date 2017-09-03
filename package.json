@@ -11,7 +11,10 @@
   },
   "devDependencies": {},
   "homepage": "https://github.com/nak2k/node-lambda-console",
-  "keywords": [],
+  "keywords": [
+    "aws",
+    "lambda"
+  ],
   "license": "MIT",
   "main": "lib",
   "repository": {
