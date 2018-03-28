@@ -7,7 +7,7 @@
     "url": "https://github.com/nak2k/node-lambda-console/issues"
   },
   "dependencies": {
-    "err-json": "0.0.3"
+    "err-json": "0.0.4"
   },
   "devDependencies": {},
   "homepage": "https://github.com/nak2k/node-lambda-console",
