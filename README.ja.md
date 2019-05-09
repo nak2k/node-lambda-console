@@ -16,6 +16,8 @@ const {
   info,
   dir,
   error,
+  warn,
+  debug,
 } = require('lambda-console');
 
 // これは console.log と等価。

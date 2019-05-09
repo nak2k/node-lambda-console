@@ -16,6 +16,8 @@ const {
   info,
   dir,
   error,
+  warn,
+  debug,
 } = require('lambda-console');
 
 // This is equivalent to console.log.
