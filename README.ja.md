@@ -5,7 +5,7 @@ Lambda 用の Console 出力。
 ## Installation
 
 ```
-npm i lambda-console -S
+npm i lambda-console
 ```
 
 ## Usage

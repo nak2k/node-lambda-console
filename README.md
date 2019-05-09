@@ -5,7 +5,7 @@ Console for Lambda.
 ## Installation
 
 ```
-npm i lambda-console -S
+npm i lambda-console
 ```
 
 ## Usage
