@@ -1,6 +1,6 @@
 {
   "name": "lambda-console",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Console for Lambda",
   "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
   "bugs": {
