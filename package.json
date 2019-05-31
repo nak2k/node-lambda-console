@@ -9,7 +9,9 @@
   "dependencies": {
     "err-json": "^0.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "tape": "^4.10.2"
+  },
   "homepage": "https://github.com/nak2k/node-lambda-console",
   "keywords": [
     "aws",
@@ -21,7 +23,10 @@
     "type": "git",
     "url": "git+https://github.com/nak2k/node-lambda-console.git"
   },
-  "scripts": {},
+  "scripts": {
+    "prepublishOnly": "npm test",
+    "test": "tape test/test*.js"
+  },
   "files": [
     "README.md",
     "lib/"
