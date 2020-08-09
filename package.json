@@ -10,7 +10,11 @@
     "err-json": "^0.1.0"
   },
   "devDependencies": {
-    "tape": "^5.0.1"
+    "@types/node": "^14.0.27",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "tape": "^5.0.1",
+    "typescript": "^3.9.7"
   },
   "homepage": "https://github.com/nak2k/node-lambda-console",
   "keywords": [
@@ -24,7 +28,10 @@
     "url": "git+https://github.com/nak2k/node-lambda-console.git"
   },
   "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
     "prepublishOnly": "npm test",
+    "pretest": "run-s clean build",
     "test": "tape test/test*.js"
   },
   "files": [

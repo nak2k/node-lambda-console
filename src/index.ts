@@ -1,8 +1,8 @@
 const { errJsonDebug } = require('err-json');
 const { format } = require('util');
 
-function formatSingleArg(arg) {
-  if (typeof(arg) !== 'object') {
+function formatSingleArg(arg: any): string {
+  if (typeof (arg) !== 'object') {
     return format(arg);
   }
 
@@ -13,7 +13,7 @@ function formatSingleArg(arg) {
   return JSON.stringify(arg);
 }
 
-function info(...args) {
+export function info(...args: any[]): void {
   const str = args.length === 1
     ? formatSingleArg(args[0])
     : format(...args);
@@ -21,7 +21,7 @@ function info(...args) {
   process.stdout.write(str.replace(/\n/g, '\r') + '\n');
 }
 
-function error(...args) {
+export function error(...args: any[]): void {
   const str = args.length === 1
     ? formatSingleArg(args[0])
     : format(...args);
@@ -29,7 +29,7 @@ function error(...args) {
   process.stderr.write(str.replace(/\n/g, '\r') + '\n');
 }
 
-function dir(arg) {
+export function dir(arg: any): void {
   process.stdout.write(formatSingleArg(arg).replace(/\n/g, '\r') + '\n');
 }
 
@@ -37,9 +37,8 @@ function noop() {
 }
 
 /*
- * Exports.
+ * Aliases.
  */
-exports.log = exports.info = info;
-exports.dir = dir;
-exports.error = exports.warn = error;
-exports.debug = process.env.DEBUG ? info : noop;
+export const log = info;
+export const warn = error;
+export const debug = process.env.DEBUG ? info : noop;
